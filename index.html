@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        font-size: x-small;
+        font-family: monospace;
+    }
+    .counting{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .main{
+        position: relative;
+        /* border: 2px solid; */
+    }
+    .num{
+        position: relative;
+        right: 5px;
+        top: 2px;
+    }
+    textarea::placeholder{
+        font-family: monospace;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="counting">
+                <p class="num"> <span>20</span> / 20</p>
+            </div>
+            <textarea name="" id="" placeholder="type something" cols="20" rows="5" maxlength="20"></textarea>
+        </div>
+    </div>    
+   
+    <script src="./script.js"></script>
+</body>
+</html>
